@@ -1,0 +1,13 @@
+@using Week2Deel1.Models
+@model List<Student>
+
+
+@{
+    ViewData["Title"] = "ZoekStudenten";
+}
+
+<h2>ZoekStudenten</h2>
+    @foreach(Student s in Model){
+    <div>Student: @s.Voornaam @s.Achternaam</div>
+    }
+    <div>Zoekterm: @ViewData["Zoekterm"]</div>
